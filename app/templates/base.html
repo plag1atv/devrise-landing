@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}DevRise — Веб-разработка{% endblock %}</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <div class="logo">DevRise</div>
+
+    <nav class="nav">
+      <a href="#courses">Курс</a>
+      <a href="#why">Почему мы</a>
+      <a href="#program">Программа</a>
+      <a href="#reviews">Отзывы</a>
+      <a class="nav__cta" href="#lead">Записаться</a>
+    </nav>
+
+    <button class="burger" id="burgerBtn" aria-label="Открыть меню">☰</button>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#courses">Курс</a>
+    <a href="#why">Почему мы</a>
+    <a href="#program">Программа</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#lead">Записаться</a>
+  </div>
+</header>
+
+<main>
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <div class="footer__brand">DevRise</div>
+      <div class="footer__text">Онлайн-курс по веб-разработке для новичков.</div>
+    </div>
+
+    <div class="footer__links">
+      <a href="#courses">Курс</a>
+      <a href="#program">Программа</a>
+      <a href="#lead">Записаться</a>
+    </div>
+
+    <div class="footer__copy">© DevRise, 2026</div>
+  </div>
+</footer>
+
+</body>
+</html>

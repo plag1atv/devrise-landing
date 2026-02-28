@@ -1,0 +1,483 @@
+{% extends "base.html" %}
+{% block title %}DevRise — Веб-разработка{% endblock %}
+
+{% block content %}
+
+<section class="hero reveal">
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+  </div>
+
+  <div class="container hero__inner">
+    <div class="hero__text reveal">
+      <h1><span>DevRise</span> — веб-разработка с нуля до первого проекта</h1>
+      <p>
+        Для студентов и новичков: понятная программа, много практики и проекты, которые можно добавить в портфолио.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#lead">Записаться на вводный урок</a>
+        <a class="btn btn--ghost" href="#program">Смотреть программу</a>
+      </div>
+
+      <div class="hero__badges">
+        <span class="badge">80% практики</span>
+        <span class="badge badge--green">Проекты в портфолио</span>
+        <span class="badge">Гибкий график</span>
+      </div>
+    </div>
+
+    <div class="hero__card reveal">
+      <div class="hero__card-title">Старт ближайшего потока</div>
+      <div class="hero__card-value">Каждую неделю</div>
+      <div class="hero__card-note">Формат: онлайн • Доступ: 24/7 • Поддержка наставника</div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal" id="courses">
+  <div class="container">
+    <h2>Курс: Веб-разработка</h2>
+    <p class="section__sub">
+      Три трека — от уверенной базы до финального проекта и публикации.
+    </p>
+
+    <div class="grid3">
+      <div class="card reveal">
+        <h3>Start (0 → основа)</h3>
+        <p>HTML, CSS, адаптивная верстка и базовые UI-паттерны.</p>
+        <ul class="list">
+          <li>Семантика и структура</li>
+          <li>Flexbox / Grid</li>
+          <li>Адаптив и типографика</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h3>JavaScript (логика)</h3>
+        <p>DOM, события, формы, интерактив и первые API-интеграции.</p>
+        <ul class="list">
+          <li>DOM и события</li>
+          <li>Валидация форм</li>
+          <li>Fetch + работа с данными</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h3>Portfolio (итог)</h3>
+        <p>Сборка финального проекта, деплой и подготовка портфолио.</p>
+        <ul class="list">
+          <li>Финальный лендинг</li>
+          <li>Мини-приложение</li>
+          <li>Публикация и оформление</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft reveal" id="why">
+  <div class="container">
+    <h2>Почему выбирают DevRise</h2>
+    <p class="section__sub">
+      Минимализм в теории, максимум пользы на практике.
+    </p>
+
+    <div class="grid4">
+      <div class="feature reveal">
+        <div class="feature__title">Практика 80%</div>
+        <div class="feature__text">Каждый модуль заканчивается задачей или мини-проектом.</div>
+      </div>
+
+      <div class="feature reveal">
+        <div class="feature__title">Наставник</div>
+        <div class="feature__text">Помощь и разбор ошибок, чтобы не застревать.</div>
+      </div>
+
+      <div class="feature reveal">
+        <div class="feature__title">Портфолио</div>
+        <div class="feature__text">2–3 проекта, которые можно показать работодателю.</div>
+      </div>
+
+      <div class="feature reveal">
+        <div class="feature__title">Гибкий темп</div>
+        <div class="feature__text">Подходит для учёбы, подработки и смены профессии.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal" id="program">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Программа обучения</h2>
+        <p class="section__sub">
+          Roadmap из 6 модулей: каждый модуль = понятный навык + практика.
+        </p>
+      </div>
+      <div class="section-head__pill">
+        <span class="dot"></span>
+        <span>6 модулей • 6 результатов</span>
+      </div>
+    </div>
+
+    <div class="roadmap">
+      <div class="roadmap__line" aria-hidden="true"></div>
+
+      <article class="roadmap__item reveal">
+        <div class="roadmap__left">
+          <div class="roadmap__step">
+            <span class="roadmap__num">01</span>
+          </div>
+          <div class="roadmap__meta">
+            <div class="roadmap__label">Foundation</div>
+            <div class="roadmap__time">1 неделя</div>
+          </div>
+        </div>
+
+        <div class="roadmap__card">
+          <h3>HTML5 и семантика</h3>
+          <p>Строим правильный каркас страницы, чтобы верстка была понятной и чистой.</p>
+          <div class="roadmap__tags">
+            <span class="tag">Семантика</span>
+            <span class="tag">Доступность</span>
+            <span class="tag">Структура</span>
+          </div>
+          <div class="roadmap__result">
+            <span class="spark">✦</span>
+            Результат: страница-портфолио (структура + контент)
+          </div>
+        </div>
+      </article>
+
+      <article class="roadmap__item reveal">
+        <div class="roadmap__left">
+          <div class="roadmap__step">
+            <span class="roadmap__num">02</span>
+          </div>
+          <div class="roadmap__meta">
+            <div class="roadmap__label">Layout</div>
+            <div class="roadmap__time">1–2 недели</div>
+          </div>
+        </div>
+
+        <div class="roadmap__card">
+          <h3>CSS3, сетки и адаптив</h3>
+          <p>Делаем современный layout: bento-сетки, адаптив, типографика и ритм.</p>
+          <div class="roadmap__tags">
+            <span class="tag">Flex</span>
+            <span class="tag">Grid</span>
+            <span class="tag tag--green">Adaptive</span>
+          </div>
+          <div class="roadmap__result">
+            <span class="spark">✦</span>
+            Результат: адаптивный лендинг (desktop → mobile)
+          </div>
+        </div>
+      </article>
+
+      <article class="roadmap__item reveal">
+        <div class="roadmap__left">
+          <div class="roadmap__step">
+            <span class="roadmap__num">03</span>
+          </div>
+          <div class="roadmap__meta">
+            <div class="roadmap__label">Logic</div>
+            <div class="roadmap__time">1 неделя</div>
+          </div>
+        </div>
+
+        <div class="roadmap__card">
+          <h3>JavaScript основы</h3>
+          <p>Логика и структура кода: функции, объекты, массивы, практические задачи.</p>
+          <div class="roadmap__tags">
+            <span class="tag">Functions</span>
+            <span class="tag">Arrays</span>
+            <span class="tag">Objects</span>
+          </div>
+          <div class="roadmap__result">
+            <span class="spark">✦</span>
+            Результат: набор UI-скриптов (меню/табы/всплывашки)
+          </div>
+        </div>
+      </article>
+
+      <article class="roadmap__item reveal">
+        <div class="roadmap__left">
+          <div class="roadmap__step">
+            <span class="roadmap__num">04</span>
+          </div>
+          <div class="roadmap__meta">
+            <div class="roadmap__label">UI</div>
+            <div class="roadmap__time">1 неделя</div>
+          </div>
+        </div>
+
+        <div class="roadmap__card">
+          <h3>DOM, события, формы</h3>
+          <p>Интерактив: события, модалки, формы, валидация и UX-детали.</p>
+          <div class="roadmap__tags">
+            <span class="tag">DOM</span>
+            <span class="tag">Events</span>
+            <span class="tag">Forms</span>
+          </div>
+          <div class="roadmap__result">
+            <span class="spark">✦</span>
+            Результат: интерактивный блок + качественная форма
+          </div>
+        </div>
+      </article>
+
+      <article class="roadmap__item reveal">
+        <div class="roadmap__left">
+          <div class="roadmap__step">
+            <span class="roadmap__num">05</span>
+          </div>
+          <div class="roadmap__meta">
+            <div class="roadmap__label">Data</div>
+            <div class="roadmap__time">1 неделя</div>
+          </div>
+        </div>
+
+        <div class="roadmap__card">
+          <h3>API и fetch</h3>
+          <p>Подключаем внешние данные: запросы, обработка ошибок, состояния загрузки.</p>
+          <div class="roadmap__tags">
+            <span class="tag">Fetch</span>
+            <span class="tag">JSON</span>
+            <span class="tag tag--green">API</span>
+          </div>
+          <div class="roadmap__result">
+            <span class="spark">✦</span>
+            Результат: мини-приложение с данными (карточки/список)
+          </div>
+        </div>
+      </article>
+
+      <article class="roadmap__item reveal">
+        <div class="roadmap__left">
+          <div class="roadmap__step roadmap__step--accent">
+            <span class="roadmap__num">06</span>
+          </div>
+          <div class="roadmap__meta">
+            <div class="roadmap__label">Final</div>
+            <div class="roadmap__time">1 неделя</div>
+          </div>
+        </div>
+
+        <div class="roadmap__card roadmap__card--accent">
+          <h3>Финальный проект и деплой</h3>
+          <p>Собираем проект, наводим порядок, публикуем и оформляем в GitHub.</p>
+          <div class="roadmap__tags">
+            <span class="tag">Deploy</span>
+            <span class="tag">GitHub</span>
+            <span class="tag tag--green">Portfolio</span>
+          </div>
+          <div class="roadmap__result">
+            <span class="spark">✦</span>
+            Результат: законченный кейс для портфолио
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft reveal" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Отзывы</h2>
+        <p class="section__sub">Оставьте отзыв после прохождения курса.</p>
+      </div>
+      <div class="section-head__pill">
+        <span class="dot dot--green"></span>
+        <span>Реалистичные примеры</span>
+      </div>
+    </div>
+
+    <div class="marquee" aria-label="Отзывы студентов">
+      <div class="marquee__track">
+        <!-- 1-й набор -->
+        <article class="review-card"><h3>Алина, студентка</h3><p>«Наконец поняла адаптив и сетки. Очень помогли мини-проекты.»</p></article>
+        <article class="review-card"><h3>Илья, смена профессии</h3><p>«Структура без воды. Финальный проект добавил в портфолио.»</p></article>
+        <article class="review-card"><h3>Мария, новичок</h3><p>«JS перестал быть страшным, всё закрепляли практикой.»</p></article>
+        <article class="review-card"><h3>Денис, студент</h3><p>«Понравилось, что учат делать аккуратно и минималистично.»</p></article>
+        <article class="review-card"><h3>Ольга, новичок</h3><p>«Наставник помогал, когда застревала. Темп комфортный.»</p></article>
+        <article class="review-card"><h3>Артём, смена профессии</h3><p>«Форма, DOM, API — сложилось в единую картину.»</p></article>
+        <article class="review-card"><h3>Катя, студентка</h3><p>«Сделала первый лендинг и не стыдно показать друзьям 🙂»</p></article>
+        <article class="review-card"><h3>Никита, новичок</h3><p>«Задачи подобраны очень удачно. Реально чувствуешь прогресс.»</p></article>
+
+        <!-- 2-й набор (дубликат для бесконечной ленты) -->
+        <article class="review-card"><h3>Алина, студентка</h3><p>«Наконец поняла адаптив и сетки. Очень помогли мини-проекты.»</p></article>
+        <article class="review-card"><h3>Илья, смена профессии</h3><p>«Структура без воды. Финальный проект добавил в портфолио.»</p></article>
+        <article class="review-card"><h3>Мария, новичок</h3><p>«JS перестал быть страшным, всё закрепляли практикой.»</p></article>
+        <article class="review-card"><h3>Денис, студент</h3><p>«Понравилось, что учат делать аккуратно и минималистично.»</p></article>
+        <article class="review-card"><h3>Ольга, новичок</h3><p>«Наставник помогал, когда застревала. Темп комфортный.»</p></article>
+        <article class="review-card"><h3>Артём, смена профессии</h3><p>«Форма, DOM, API — сложилось в единую картину.»</p></article>
+        <article class="review-card"><h3>Катя, студентка</h3><p>«Сделала первый лендинг и не стыдно показать друзьям 🙂»</p></article>
+        <article class="review-card"><h3>Никита, новичок</h3><p>«Задачи подобраны очень удачно. Реально чувствуешь прогресс.»</p></article>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section reveal" id="mentors">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Наставники</h2>
+        <p class="section__sub">Короткие созвоны, разбор ошибок и поддержка по проектам.</p>
+      </div>
+      <div class="section-head__pill">
+        <span class="dot"></span>
+        <span>Опыт в коммерции</span>
+      </div>
+    </div>
+
+    <div class="grid3">
+      <article class="mentor-card reveal">
+        <div class="mentor-top">
+          <div class="avatar">DK</div>
+          <div>
+            <div class="mentor-name">Даниил К.</div>
+            <div class="mentor-role">Senior Frontend • 6+ лет</div>
+          </div>
+        </div>
+        <ul class="mentor-list">
+          <li>Верстка, UI-сетки, адаптив</li>
+          <li>Ревью кода и улучшения</li>
+          <li>Подготовка проектов в портфолио</li>
+        </ul>
+      </article>
+
+      <article class="mentor-card reveal">
+        <div class="mentor-top">
+          <div class="avatar avatar--green">AS</div>
+          <div>
+            <div class="mentor-name">Анастасия С.</div>
+            <div class="mentor-role">Full-stack mentor • 5+ лет</div>
+          </div>
+        </div>
+        <ul class="mentor-list">
+          <li>JavaScript + DOM</li>
+          <li>Работа с API</li>
+          <li>Практика и разбор задач</li>
+        </ul>
+      </article>
+
+      <article class="mentor-card reveal">
+        <div class="mentor-top">
+          <div class="avatar">VP</div>
+          <div>
+            <div class="mentor-name">Виктор П.</div>
+            <div class="mentor-role">Frontend Engineer • 4+ года</div>
+          </div>
+        </div>
+        <ul class="mentor-list">
+          <li>UI-детали, микро-анимации</li>
+          <li>Стандарты и чистота кода</li>
+          <li>Подготовка к собеседованиям</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal" id="lead">
+  <div class="container">
+    <div class="lead-wrap">
+      <div class="lead-info reveal">
+        <h2>Бесплатный вводный урок</h2>
+        <p class="lead-sub">
+          За 30–40 минут разберём твой уровень и составим маршрут обучения.
+        </p>
+
+        <div class="lead-points">
+          <div class="lead-point">
+            <div class="lead-ico">✓</div>
+            <div>
+              <div class="lead-pt-title">План обучения</div>
+              <div class="lead-pt-text">Под твой график: студент / новичок / смена профессии.</div>
+            </div>
+          </div>
+
+          <div class="lead-point">
+            <div class="lead-ico">✓</div>
+            <div>
+              <div class="lead-pt-title">1-й мини-проект</div>
+              <div class="lead-pt-text">Дадим шаблон и покажем как улучшить.</div>
+            </div>
+          </div>
+
+          <div class="lead-point">
+            <div class="lead-ico">✓</div>
+            <div>
+              <div class="lead-pt-title">Чек-лист портфолио</div>
+              <div class="lead-pt-text">Чтобы твой лендинг выглядел “дорого”.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lead-badges">
+          <span class="badge">Без спама</span>
+          <span class="badge badge--green">Письмо за 1–2 минуты</span>
+        </div>
+      </div>
+
+      <form class="form lead-form reveal" method="post" action="/lead">
+        <div class="form-title">Оставить заявку</div>
+
+        <div class="form__row">
+          <label class="form__field">
+            <span>Имя</span>
+            <input type="text" name="name" placeholder="Например, Иван" required>
+          </label>
+
+          <label class="form__field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="example@mail.com" required>
+          </label>
+        </div>
+
+        <div class="form__row">
+          <label class="form__field">
+            <span>Уровень</span>
+            <select name="level">
+              <option value="Новичок" selected>Новичок</option>
+              <option value="Есть база">Есть база</option>
+              <option value="Уверенно">Уверенно</option>
+            </select>
+          </label>
+
+          <label class="form__field">
+            <span>Цель</span>
+            <select name="goal">
+              <option value="Первый проект" selected>Сделать первый проект</option>
+              <option value="Портфолио">Собрать портфолио</option>
+              <option value="Смена профессии">Смена профессии</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="toggle">
+          <input type="checkbox" required>
+          <span class="toggle-ui" aria-hidden="true"></span>
+          <span class="toggle-text">
+            Согласен(на) на обработку персональных данных и с политикой конфиденциальности
+          </span>
+        </label>
+
+        <button class="btn btn--primary btn--wide" type="submit">Записаться</button>
+
+        <div class="form-hint">Нажимая кнопку, вы подтверждаете согласие на обработку данных.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+# venv
+venv/
+.venv/
+
+# python
+__pycache__/
+*.pyc
+
+# flask
+instance/
+
+# ide
+.idea/
+
+# os
+.DS_Store

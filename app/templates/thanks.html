@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Заявка отправлена — DevRise{% endblock %}
+
+{% block content %}
+<section class="section">
+  <div class="container">
+    <h1>Спасибо, {{ name }}!</h1>
+    <p>Мы получили заявку. Скоро отправим подробности на почту.</p>
+
+    <div class="card" style="margin-top: 16px;">
+      <p><b>Уровень:</b> {{ level }}</p>
+      <p><b>Цель:</b> {{ goal }}</p>
+    </div>
+
+    <div style="margin-top: 16px;">
+      <a class="btn btn--ghost" href="/">Вернуться на главную</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
